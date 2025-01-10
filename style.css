@@ -1,7 +1,8 @@
 
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
     margin: 0;
     padding: 0;
     background: #f4f4f9;
