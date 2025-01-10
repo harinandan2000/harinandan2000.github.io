@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004aad;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .section {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .certificates-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .certificate {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .certificate img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #004aad;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <section id="certificates" class="section">
+        <h1 class="section-title">Certificates</h1>
+        <p>Total Certificates: <span id="total-certificates">0</span></p>
+        <div class="certificates-container">
+            <!-- Example certificate block -->
+            <div class="certificate">
+                <img src="Certificates/1.png" alt="Certificate">
+                <h3>CERTIFICATE FOR TELECENTRE ENTREPRENEUR COURSE</h3>
+                <p>CERTIFICATE FOR TELECENTRE ENTREPRENEUR COURSE Telecentre</p>
+            </div>
+            <div class="certificate">
+                <img src="Certificates/2.png" alt="Certificate">
+                <h3>CERTIFICATE FOR COMMON SERVICE CENTER</h3>
+                <p>CERTIFICATE FOR COMMON SERVICE CENTER</p>
+            </div>
+            <div class="certificate">
+                <img src="Certificates/3.png" alt="Certificate">
+                <h3>CERTIFICATE FOR SOLICITING INSURANCE BUSINESS AS A VLE-INSURANCE</h3>
+                <p>CERTIFICATE FOR SOLICITING INSURANCE BUSINESS AS A VLE-INSURANCE</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('total-certificates').textContent = document.querySelectorAll('.certificate').length;
+    </script>
+</body>
+</html>
